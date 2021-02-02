@@ -14,6 +14,9 @@ const addNotes = (title, body) => {
   const duplicateNote = notes.find((note) => {
     return note.title === title;
   })
+
+  debugger //node inspect app.js --title ...
+
   console.log(duplicateNotes)
 
   if (!duplicateNote) {
